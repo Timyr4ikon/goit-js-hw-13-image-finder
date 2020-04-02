@@ -1,0 +1,28 @@
+
+{{#each this}}
+<li class="gallery__item grid-item">
+<div class="photo-card center-align valign-wrapper">
+<img id="imgPixabay" src="{{webformatURL}}" data-source="{{largeImageURL}}" alt="#" />
+
+<div class="stats">
+<div class="flex-center">
+<i class="material-icons stats__icons">thumb_up</i>
+<p class="stats-item valign-wrapper" data-tooltip="Likes!">{{likes}}</p>
+</div>
+<div class="flex-center">
+<i class="material-icons stats__icons">visibility</i>
+<p class="stats-item valign-wrapper" data-tooltip="Просмотры">{{views}}</p>
+</div>
+<div class="flex-center">
+<i class="material-icons stats__icons">comment</i>
+<p class="stats-item valign-wrapper" data-tooltip="Комментарии">{{comments}}</p>
+</div>
+<div class="flex-center">
+<i class="material-icons stats__icons">cloud_download</i>
+<p class="stats-item valign-wrapper" data-tooltip="Загрузки">{{downloads}}</p>
+</div>
+</div>
+
+</div>
+</li>
+{{/each}}
